@@ -9,4 +9,17 @@ import { movies } from '@/data/movies';
 import type { Movie } from '@/types/movie';
 
 const allMovies: Ref<Movie[]> = ref(movies)
+
+function startGame() {
+  console.log('start')
+
+  // Get 10 random movies
+
+  // Duplicate into pairs
+}
+
+onMounted(() => {
+  console.log('mounted')
+  startGame()
+})
 </script>
