@@ -6,25 +6,19 @@
 
 <script setup lang="ts">
 import { shuffle } from 'lodash'
-import { movies } from '@/data/movies';
+import { allMovies } from '@/data/movies';
 import type { Movie } from '@/types/movie';
 
-const allMovies: Ref<Movie[]> = ref(movies)
+const movies: Ref<Movie[]> = ref(allMovies)
+const memoryMovies: Ref<Movie[]> = ref([])
 
 function startGame() {
   console.log('start')
-  // Shuffle array
-  const randomMovies = shuffle(allMovies.value).slice(0, 10)
-
-  console.log(randomMovies)
-
-  // Get random movies
-
-
-  // Duplicate into pairs
+  // Shuffles array and cuts to first 10 duplicating each of those
+  memoryMovies.value = shuffle(movies.value).slice(0, 10).flatMap(movie => [movie, movie])
+  // .map((movie, index) => ({ ...movie, id: index })) --- add id based on index
+  console.log(memoryMovies.value)
 }
 
-onMounted(() => {
-  startGame()
-})
+onMounted(() => startGame())
 </script>

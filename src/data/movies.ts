@@ -69,12 +69,4 @@ const allMovies:Movie[] = [
   },
 ]
 
-const movies:Movie[] = allMovies.map((movie, index) => {
-  // Add index as id for every movie
-  return {
-    ...movie,
-    id: index
-  }
-})
-
-export { movies }
+export { allMovies }
