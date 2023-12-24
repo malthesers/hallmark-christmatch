@@ -5,8 +5,9 @@
   "compilerOptions": {
     "composite": true,
     "baseUrl": ".",
+    "types": ["lodash"],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
     }
   }
 }

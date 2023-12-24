@@ -13,13 +13,14 @@ const allMovies: Ref<Movie[]> = ref(movies)
 function startGame() {
   console.log('start')
 
-  // Get 10 random movies
+  // Get random movies
+
 
   // Duplicate into pairs
 }
 
 onMounted(() => {
-  console.log('mounted')
+  console.log('mounted', allMovies.value)
   startGame()
 })
 </script>
