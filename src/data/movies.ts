@@ -1,4 +1,4 @@
-import { Movie } from "../../types/movie";
+import type { Movie } from "@/types/movie";
 
 const allMovies:Movie[] = [
   {
@@ -14,3 +14,13 @@ const allMovies:Movie[] = [
     year: 2015
   },
 ]
+
+const movies:Movie[] = allMovies.map((movie, index) => {
+  // Add index as id for every movie
+  return {
+    ...movie,
+    id: index
+  }
+})
+
+export { movies }

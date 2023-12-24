@@ -1,9 +1,11 @@
 <template>
   <article>
-    <p></p>
+    <p>{{ movie.title }}</p>
   </article>
 </template>
 
 <script setup lang="ts">
-// defineProps<{ movie: Movie}>()
+import type { Movie } from '@/types/movie';
+
+defineProps<{ movie: Movie }>()
 </script>
