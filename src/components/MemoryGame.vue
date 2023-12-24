@@ -5,6 +5,7 @@
 </template>
 
 <script setup lang="ts">
+import { shuffle } from 'lodash'
 import { movies } from '@/data/movies';
 import type { Movie } from '@/types/movie';
 
@@ -12,6 +13,10 @@ const allMovies: Ref<Movie[]> = ref(movies)
 
 function startGame() {
   console.log('start')
+  // Shuffle array
+  const randomMovies = shuffle(allMovies.value).slice(0, 10)
+
+  console.log(randomMovies)
 
   // Get random movies
 
@@ -20,7 +25,6 @@ function startGame() {
 }
 
 onMounted(() => {
-  console.log('mounted', allMovies.value)
   startGame()
 })
 </script>
