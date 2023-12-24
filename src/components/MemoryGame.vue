@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-2xl grid grid-cols-5 gap-4 p-4">
-    <MovieCard v-for="movie in memoryMovies" :movie="movie" :chosenMovie="chosenMovie" @click="chosenMovie = movie" />
+    <MovieCard v-for="movie in memoryMovies" :movie="movie" :chosenMovie="chosenMovie" @click="selectMovie(movie)" />
   </div>
 </template>
 
@@ -12,6 +12,18 @@ import type { Movie } from '@/types/movie';
 const movies: Ref<Movie[]> = ref(allMovies)
 const memoryMovies: Ref<Movie[]> = ref([])
 const chosenMovie: Ref<Movie | null> = ref(null)
+
+function selectMovie(movie: Movie): void {
+  if (!chosenMovie.value) {
+    chosenMovie.value = movie
+  } else if (chosenMovie.value.title === movie.title) {
+    chosenMovie.value = null
+    console.log('correct')
+  } else {
+    chosenMovie.value = null
+    console.log('wrong')
+  }
+}
 
 function startGame(): void {
   // Shuffles array and cuts to first 10 duplicating each of those into another shuffled array adding id based on index
