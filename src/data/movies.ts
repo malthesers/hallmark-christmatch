@@ -38,10 +38,10 @@ const allMovies:Movie[] = [
     year: 2019
   },
   {
-    title: 'Our Christmas Love Song',
-    cover: 'our-christmas-love-song',
-    description: 'When a country music star is accused of plagiarizing her new Christmas song, she returns to her hometown for the holiday season to try and find proof of authorship.',
-    year: 2019
+    title: 'Finding Santa',
+    cover: 'finding-santa',
+    description: 'Grace is thrilled to be taking over the town\'s Christmas parade, but when the man playing St. Nick breaks his arm, she needs to find a replacement, even if the replacement is unwilling.',
+    year: 2017
   },
   {
     title: 'A Blue Ridge Mountain Christmas',

@@ -1,6 +1,6 @@
 <template>
   <article>
-    <p>{{ movie.title }}</p>
+    <img :src="`src/assets/covers/${movie.cover}.jpg`" :alt="movie.title">
   </article>
 </template>
 
