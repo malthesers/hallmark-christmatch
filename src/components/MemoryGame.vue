@@ -41,11 +41,12 @@ function selectMovie(movie: Movie): void {
     // If correct second movie, reset chosen movie and add title to list of guessed movies
     if (chosenMovie.value.title === movie.title) {
       guessedMovies.value.push(movie.title)
-      return
+      chosenMovie.value = null
+      secondMovie.value = null
     }
 
     // If clicked incorrect movie
-    if (chosenMovie.value.title !== movie.title) {
+    else if (chosenMovie.value.title !== movie.title) {
       console.log('wrong')
     }
   }
