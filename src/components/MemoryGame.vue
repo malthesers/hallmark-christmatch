@@ -14,22 +14,30 @@ const movies: Ref<Movie[]> = ref(allMovies)
 const memoryMovies: Ref<Movie[]> = ref([])
 const chosenMovie: Ref<Movie | null> = ref(null)
 const guessedMovies: Ref<string[]> = ref([])
+const guesses: Ref<number> = ref(0)
 
 function selectMovie(movie: Movie): void {
+  // If no movie chosen, set clicked movie as chosen
   if (!chosenMovie.value) {
-    // If no movie chosen, set clicked movie as chosen
     chosenMovie.value = movie
-  } else if (chosenMovie.value.title === movie.title) {
-    if (chosenMovie.value.id !== movie.id) {
-      // If correct second movie, reset chosen movie and add title to list of guessed movies
-      chosenMovie.value = null
-      guessedMovies.value.push(movie.title)
-    } else {
-      // If the same card was clicked again
-      console.log('clicked same movie')
-    }
-  } else {
-    // If clicked incorrect movie
+    return
+  }
+
+  // If the same card was clicked again
+  if (chosenMovie.value.id === movie.id) {
+    console.log('clicked same movie')
+    return
+  }
+
+  // If correct second movie, reset chosen movie and add title to list of guessed movies
+  if (chosenMovie.value.title === movie.title && chosenMovie.value.id !== movie.id) {
+    chosenMovie.value = null
+    guessedMovies.value.push(movie.title)
+    return
+  }
+
+  // If clicked incorrect movie
+  if (chosenMovie.value.title !== movie.title) {
     chosenMovie.value = null
     console.log('wrong')
   }
