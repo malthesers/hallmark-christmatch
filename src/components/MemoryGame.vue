@@ -1,8 +1,11 @@
 <template>
-  <div class="max-w-2xl grid grid-cols-5 gap-4 p-4">
-    <MovieCard v-for="movie in memoryMovies" :movie="movie" :chosenMovie="chosenMovie" :guessedMovies="guessedMovies"
-      @click="selectMovie(movie)" />
-  </div>
+  <section>
+    <p class="text-center text-2xl">{{ guesses }}</p>
+    <div class="max-w-2xl grid grid-cols-5 gap-4 p-4">
+      <MovieCard v-for="movie in memoryMovies" :movie="movie" :chosenMovie="chosenMovie" :guessedMovies="guessedMovies"
+        @click="selectMovie(movie)" />
+    </div>
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -20,26 +23,24 @@ function selectMovie(movie: Movie): void {
   // If no movie chosen, set clicked movie as chosen
   if (!chosenMovie.value) {
     chosenMovie.value = movie
-    return
   }
 
-  // If the same card was clicked again
-  if (chosenMovie.value.id === movie.id) {
-    console.log('clicked same movie')
-    return
-  }
+  // If a movie is already chosen and a different movie was clicked
+  else if (chosenMovie.value.id !== movie.id) {
+    guesses.value++
 
-  // If correct second movie, reset chosen movie and add title to list of guessed movies
-  if (chosenMovie.value.title === movie.title && chosenMovie.value.id !== movie.id) {
-    chosenMovie.value = null
-    guessedMovies.value.push(movie.title)
-    return
-  }
+    // If correct second movie, reset chosen movie and add title to list of guessed movies
+    if (chosenMovie.value.title === movie.title) {
+      chosenMovie.value = null
+      guessedMovies.value.push(movie.title)
+      return
+    }
 
-  // If clicked incorrect movie
-  if (chosenMovie.value.title !== movie.title) {
-    chosenMovie.value = null
-    console.log('wrong')
+    // If clicked incorrect movie
+    if (chosenMovie.value.title !== movie.title) {
+      chosenMovie.value = null
+      console.log('wrong')
+    }
   }
 }
 
