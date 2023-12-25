@@ -17,12 +17,19 @@ const guessedMovies: Ref<string[]> = ref([])
 
 function selectMovie(movie: Movie): void {
   if (!chosenMovie.value) {
+    // If no movie chosen, set clicked movie as chosen
     chosenMovie.value = movie
-  } else if (chosenMovie.value.title === movie.title && chosenMovie.value.id !== movie.id) {
-    chosenMovie.value = null
-    guessedMovies.value.push(movie.title)
-    console.log('correct')
+  } else if (chosenMovie.value.title === movie.title) {
+    if (chosenMovie.value.id !== movie.id) {
+      // If correct second movie, reset chosen movie and add title to list of guessed movies
+      chosenMovie.value = null
+      guessedMovies.value.push(movie.title)
+    } else {
+      // If the same card was clicked again
+      console.log('clicked same movie')
+    }
   } else {
+    // If clicked incorrect movie
     chosenMovie.value = null
     console.log('wrong')
   }
