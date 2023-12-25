@@ -18,7 +18,7 @@ const guessedMovies: Ref<string[]> = ref([])
 function selectMovie(movie: Movie): void {
   if (!chosenMovie.value) {
     chosenMovie.value = movie
-  } else if (chosenMovie.value.title === movie.title) {
+  } else if (chosenMovie.value.title === movie.title && chosenMovie.value.id !== movie.id) {
     chosenMovie.value = null
     guessedMovies.value.push(movie.title)
     console.log('correct')
