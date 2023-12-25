@@ -2,7 +2,7 @@
   <section>
     <p class="text-center text-2xl">{{ guesses }}</p>
     <div class="max-w-2xl grid grid-cols-5 gap-4 p-4">
-      <MovieCard v-for="movie in memoryMovies" :movie="movie" :chosenMovie="chosenMovie" :secondMovie="secondMovie"
+      <MovieCard v-for="movie in memoryMovies" :movie="movie" :firstMovie="firstMovie" :secondMovie="secondMovie"
         :guessedMovies="guessedMovies" @click="selectMovie(movie)" />
     </div>
   </section>
@@ -16,7 +16,7 @@ import type { Movie } from '@/types/movie';
 const movies: Ref<Movie[]> = ref(allMovies)
 const memoryMovies: Ref<Movie[]> = ref([])
 
-const chosenMovie: Ref<Movie | null> = ref(null)
+const firstMovie: Ref<Movie | null> = ref(null)
 const secondMovie: Ref<Movie | null> = ref(null)
 
 const guessedMovies: Ref<string[]> = ref([])
@@ -24,29 +24,29 @@ const guesses: Ref<number> = ref(0)
 
 function selectMovie(movie: Movie): void {
   // If no movie chosen, set clicked movie as chosen
-  if (!chosenMovie.value) {
-    chosenMovie.value = movie
+  if (!firstMovie.value) {
+    firstMovie.value = movie
   }
 
   else if (secondMovie.value) {
-    chosenMovie.value = null
+    firstMovie.value = null
     secondMovie.value = null
   }
 
   // If a movie is already chosen and a different movie was clicked
-  else if (chosenMovie.value.id !== movie.id) {
+  else if (firstMovie.value.id !== movie.id) {
     secondMovie.value = movie
     guesses.value++
 
     // If correct second movie, reset chosen movie and add title to list of guessed movies
-    if (chosenMovie.value.title === movie.title) {
+    if (firstMovie.value.title === movie.title) {
       guessedMovies.value.push(movie.title)
-      chosenMovie.value = null
+      firstMovie.value = null
       secondMovie.value = null
     }
 
     // If clicked incorrect movie
-    else if (chosenMovie.value.title !== movie.title) {
+    else if (firstMovie.value.title !== movie.title) {
       console.log('wrong')
     }
   }

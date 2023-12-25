@@ -1,7 +1,7 @@
 <template>
   <article :class="[
     (
-      movie.id === chosenMovie?.id
+      movie.id === firstMovie?.id
       || movie.id === secondMovie?.id
       || guessedMovies.includes(movie.title)
     ) ? '' : 'flipped']" class="relative grid cursor-pointer duration-700 ease-in-out transform">
@@ -16,7 +16,7 @@ import type { Movie } from '@/types/movie';
 
 defineProps<{
   movie: Movie
-  chosenMovie: Movie | null
+  firstMovie: Movie | null
   secondMovie: Movie | null
   guessedMovies: string[]
 }>()
