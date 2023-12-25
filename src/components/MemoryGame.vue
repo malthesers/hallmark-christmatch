@@ -1,6 +1,7 @@
 <template>
   <div class="max-w-2xl grid grid-cols-5 gap-4 p-4">
-    <MovieCard v-for="movie in memoryMovies" :movie="movie" :chosenMovie="chosenMovie" @click="selectMovie(movie)" />
+    <MovieCard v-for="movie in memoryMovies" :movie="movie" :chosenMovie="chosenMovie" :guessedMovies="guessedMovies"
+      @click="selectMovie(movie)" />
   </div>
 </template>
 
@@ -12,12 +13,14 @@ import type { Movie } from '@/types/movie';
 const movies: Ref<Movie[]> = ref(allMovies)
 const memoryMovies: Ref<Movie[]> = ref([])
 const chosenMovie: Ref<Movie | null> = ref(null)
+const guessedMovies: Ref<string[]> = ref([])
 
 function selectMovie(movie: Movie): void {
   if (!chosenMovie.value) {
     chosenMovie.value = movie
   } else if (chosenMovie.value.title === movie.title) {
     chosenMovie.value = null
+    guessedMovies.value.push(movie.title)
     console.log('correct')
   } else {
     chosenMovie.value = null
