@@ -1,10 +1,11 @@
 <template>
-  <article :class="[
-    (
+  <article :class="{
+    'flipped': (
       movie.id === firstMovie?.id
       || movie.id === secondMovie?.id
       || guessedMovies.includes(movie.title)
-    ) ? '' : 'flipped']" class="relative grid cursor-pointer duration-700 ease-in-out transform">
+    )
+  }" class="relative grid cursor-pointer duration-700 ease-in-out transform">
     <div class="w-full h-full col-[1/1] row-[1/1] bg-black"></div>
     <img :src="`src/assets/covers/${movie.cover}.jpg`" :alt="movie.title"
       class="w-full h-full col-[1/1] row-[1/1] object-cover backface-hidden">
@@ -24,7 +25,7 @@ defineProps<{
 
 <style scoped>
 article {
-  transform: perspective(40rem);
+  transform: perspective(40rem) rotateY(180deg);
   transform-style: preserve-3d;
 }
 
@@ -34,6 +35,6 @@ img {
 }
 
 .flipped {
-  transform: rotateY(180deg);
+  transform: rotateY(0);
 }
 </style>
