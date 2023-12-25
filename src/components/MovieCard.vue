@@ -1,9 +1,9 @@
 <template>
   <article :class="[(movie.id === chosenMovie?.id || guessedMovies.includes(movie.title)) ? '' : 'flipped']"
-    class="relative h-full preserve-3d duration-700 ease-in-out transform">
-    <div class="w-full h-full bg-black"></div>
+    class="relative grid preserve-3d duration-700 ease-in-out transform">
+    <div class="w-full h-full col-[1/1] row-[1/1] bg-black"></div>
     <img :src="`src/assets/covers/${movie.cover}.jpg`" :alt="movie.title"
-      class="w-full h-full object-cover backface-hidden">
+      class="w-full h-full col-[1/1] row-[1/1] object-cover backface-hidden">
   </article>
 </template>
 
