@@ -15,7 +15,7 @@ import { allMovies } from '@/data/movies';
 import type { Movie } from '@/types/movie';
 
 const paused: Ref<boolean> = ref(true)
-const gameSize: Ref<number> = ref(3)
+const gameSize: Ref<number> = ref(10)
 
 const movies: Ref<Movie[]> = ref(allMovies)
 const memoryMovies: Ref<Movie[]> = ref([])
