@@ -15,6 +15,7 @@ import { allMovies } from '@/data/movies';
 import type { Movie } from '@/types/movie';
 
 const loading: Ref<boolean> = ref(true)
+const gameSize: Ref<number> = ref(10)
 
 const movies: Ref<Movie[]> = ref(allMovies)
 const memoryMovies: Ref<Movie[]> = ref([])
@@ -24,6 +25,7 @@ const secondMovie: Ref<Movie | null> = ref(null)
 
 const guessedMovies: Ref<string[]> = ref([])
 const guesses: Ref<number> = ref(0)
+
 
 function selectMovie(movie: Movie): void {
   // If no movie chosen, set clicked movie as chosen
@@ -68,7 +70,7 @@ function startGame(delay: number = 0): void {
   // Create timeout to change movies after flip animation is done
   setTimeout(() => {
     // Shuffles array and cuts to first 10 duplicating each of those into another shuffled array adding id based on index
-    memoryMovies.value = shuffle(shuffle(movies.value).slice(0, 10).flatMap(movie => [movie, movie])).map((movie, index) => ({ ...movie, id: index }))
+    memoryMovies.value = shuffle(shuffle(movies.value).slice(0, gameSize.value).flatMap(movie => [movie, movie])).map((movie, index) => ({ ...movie, id: index }))
     // Sets loading state to false after update
     loading.value = false
     console.log('start', memoryMovies.value)
