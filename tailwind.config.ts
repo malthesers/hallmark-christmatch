@@ -3,7 +3,7 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      zeyada: ['Zeyada, serif, system-ui']
+      title: ['Zeyada, serif, system-ui']
     },
     extend: {},
   },

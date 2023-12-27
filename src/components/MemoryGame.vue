@@ -1,5 +1,5 @@
 <template>
-  <main class="font-zeyada text-white min-h-[100dvh] grid place-content-center p-4 pt-20">
+  <main class="font-title text-white min-h-[100dvh] grid place-content-center p-4 pt-20">
     <section class="flex flex-col gap-4">
       <div class="flex flex-row justify-between">
         <button @click="startGame(1000)" class="text-2xl border-2 border-white px-3 py-2 rounded-lg">
