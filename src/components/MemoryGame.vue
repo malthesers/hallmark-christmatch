@@ -1,5 +1,5 @@
 <template>
-  <main class="font-zeyada text-white h-screen grid place-content-center">
+  <main class="font-zeyada text-white h-screen grid place-content-center pt-20">
     <section class="flex flex-col">
       <p class="text-center text-2xl mb-2">{{ guesses }}</p>
       <button @click="startGame(1000)" class="mx-auto text-2xl border-2 border-white px-3 py-2 rounded-lg">New
