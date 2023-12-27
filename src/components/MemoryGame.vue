@@ -1,10 +1,13 @@
 <template>
-  <main class="font-zeyada text-white h-screen grid place-content-center pt-20">
-    <section class="flex flex-col">
-      <p class="text-center text-2xl mb-2">{{ guesses }}</p>
-      <button @click="startGame(1000)" class="mx-auto text-2xl border-2 border-white px-3 py-2 rounded-lg">New
-        Game</button>
-      <div :class="{ 'pointer-events-none': paused }" class="max-w-2xl grid grid-cols-5 gap-4 p-4">
+  <main class="font-zeyada text-white min-h-[100dvh] grid place-content-center p-4 pt-20">
+    <section class="flex flex-col gap-4">
+      <div class="flex flex-row justify-between">
+        <button @click="startGame(1000)" class="text-2xl border-2 border-white px-3 py-2 rounded-lg">
+          <span>New Game</span>
+        </button>
+        <p class="text-center text-4xl">Guesses: {{ guesses }}</p>
+      </div>
+      <div :class="{ 'pointer-events-none': paused }" class="max-w-xl grid grid-cols-5 gap-4">
         <MovieCard v-for="movie in memoryMovies" :movie="movie" :firstMovie="firstMovie" :secondMovie="secondMovie"
           :guessedMovies="guessedMovies" @click="selectMovie(movie)" />
       </div>
