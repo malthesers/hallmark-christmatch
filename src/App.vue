@@ -1,5 +1,5 @@
 <template>
-  <main class="text-white h-screen grid place-content-center">
+  <main class="font-zeyada text-white h-screen grid place-content-center">
     <MemoryGame />
   </main>
 </template>
