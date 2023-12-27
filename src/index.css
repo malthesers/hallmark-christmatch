@@ -7,3 +7,13 @@
     @apply bg-[url('src/assets/background.jpg')] bg-repeat bg-center;
   }
 }
+
+.counter-enter-active,
+.counter-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.counter-enter-from,
+.counter-leave-to {
+  opacity: 0;
+}

@@ -6,8 +6,11 @@
           class="bg-green-900 bg-opacity-70 border-2 border-white px-3 py-2 rounded-lg duration-200 hover:bg-opacity-100">
           <span>New Game</span>
         </button>
-        <div class="grid place-content-center">
-          <span>Guesses: {{ guesses }}</span>
+        <div class="flex flex-row items-center">
+          <span>Guesses: </span>
+          <Transition name="counter" mode="out-in">
+            <span class="w-8 text-center" :key="guesses">{{ guesses }}</span>
+          </Transition>
         </div>
       </div>
       <div :class="{ 'pointer-events-none': paused }" class="max-w-xl grid grid-cols-5 gap-4">
