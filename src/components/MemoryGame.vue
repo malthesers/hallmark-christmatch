@@ -1,12 +1,15 @@
 <template>
-  <section class="flex flex-col">
-    <p class="text-center text-2xl mb-2">{{ guesses }}</p>
-    <button @click="startGame(1000)" class="mx-auto text-2xl border-2 border-white px-3 py-2 rounded-lg">New Game</button>
-    <div :class="{ 'pointer-events-none': paused }" class="max-w-2xl grid grid-cols-5 gap-4 p-4">
-      <MovieCard v-for="movie in memoryMovies" :movie="movie" :firstMovie="firstMovie" :secondMovie="secondMovie"
-        :guessedMovies="guessedMovies" @click="selectMovie(movie)" />
-    </div>
-  </section>
+  <main class="font-zeyada text-white h-screen grid place-content-center">
+    <section class="flex flex-col">
+      <p class="text-center text-2xl mb-2">{{ guesses }}</p>
+      <button @click="startGame(1000)" class="mx-auto text-2xl border-2 border-white px-3 py-2 rounded-lg">New
+        Game</button>
+      <div :class="{ 'pointer-events-none': paused }" class="max-w-2xl grid grid-cols-5 gap-4 p-4">
+        <MovieCard v-for="movie in memoryMovies" :movie="movie" :firstMovie="firstMovie" :secondMovie="secondMovie"
+          :guessedMovies="guessedMovies" @click="selectMovie(movie)" />
+      </div>
+    </section>
+  </main>
 </template>
 
 <script setup lang="ts">
