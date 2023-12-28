@@ -17,3 +17,13 @@
 .counter-leave-to {
   opacity: 0;
 }
+
+.modal-enter-active,
+.modal-leave-active {
+  transition: opacity 300ms ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
+}
