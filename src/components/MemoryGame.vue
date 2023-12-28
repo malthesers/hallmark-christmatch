@@ -19,7 +19,7 @@
       </div>
     </section>
   </main>
-  <VictoryModal :showVictoryModal="showVictoryModal" :guesses="guesses" />
+  <VictoryModal @closeModal="showVictoryModal = false" :showVictoryModal="showVictoryModal" :guesses="guesses" />
 </template>
 
 <script setup lang="ts">
