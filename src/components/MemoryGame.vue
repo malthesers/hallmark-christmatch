@@ -19,6 +19,7 @@
       </div>
     </section>
   </main>
+  <VictoryModal :showVictoryModal="showVictoryModal" :guesses="guesses" />
 </template>
 
 <script setup lang="ts">
@@ -38,6 +39,7 @@ const secondMovie: Ref<Movie | null> = ref(null)
 const guessedMovies: Ref<string[]> = ref([])
 const guesses: Ref<number> = ref(0)
 
+const showVictoryModal: Ref<boolean> = ref(false)
 
 function selectMovie(movie: Movie): void {
   // If no movie chosen, set clicked movie as chosen
