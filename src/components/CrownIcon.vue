@@ -1,0 +1,38 @@
+<template>
+  <svg width="38.97665mm" height="38.976654mm" viewBox="0 0 38.97665 38.976654" version="1.1" id="svg1"
+    xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+    <defs id="defs1" />
+    <g id="layer1" transform="translate(-80.072168,-27.510936)">
+      <g id="g4" transform="translate(3.2897529,-3.1563846)">
+        <rect
+          style="opacity:1;fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:15.2;stroke-dasharray:none"
+          id="rect2" width="38.97665" height="38.97665" x="76.782417" y="30.66732" />
+        <ellipse
+          style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:15.2;stroke-dasharray:none;stroke-opacity:1"
+          id="path1" ry="3.7093565" rx="11.442422" cy="61.454456" cx="95.797134"
+          transform="translate(0.47348992,-2.0314089)" />
+        <path id="rect1"
+          style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:15.2;stroke-dasharray:none;stroke-opacity:1"
+          d="m 95.797253,42.254772 c -0.01928,0.04959 -0.04036,0.09921 -0.05994,0.148828 -0.55555,1.341838 -5.124972,11.434582 -14.511776,5.107698 1.590131,3.234988 2.094777,4.709028 2.629297,8.733834 2.294538,-1.453289 6.906308,-2.367661 11.942423,-2.367814 5.036123,1.53e-4 9.647883,0.914525 11.942423,2.367814 0.53452,-4.024806 1.03917,-5.498846 2.62929,-8.733834 -9.3868,6.326884 -13.956218,-3.76586 -14.511768,-5.107698 -0.01958,-0.04962 -0.04066,-0.09924 -0.05994,-0.148828 z"
+          transform="translate(0.47348992,-2.0314089)" />
+        <circle
+          style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.31025;stroke-miterlimit:15.2;stroke-dasharray:none;stroke-opacity:1"
+          id="path2" cx="95.797249" cy="39.477032" r="0.61161113" transform="translate(0.47348992,-2.0314089)" />
+        <path id="path2-6"
+          style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.31025;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:15.2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+          d="m 80.121117,45.577671 a 0.61161113,0.61161113 0 0 1 -0.611611,0.611611 0.61161113,0.61161113 0 0 1 -0.611611,-0.611611 0.61161113,0.61161113 0 0 1 0.611611,-0.611611 0.61161113,0.61161113 0 0 1 0.611611,0.611611 z"
+          transform="translate(0.47348992,-2.0314089)" />
+        <path id="path3"
+          style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.31025;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:15.2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+          d="m 112.69661,45.577671 a 0.61161113,0.61161113 0 0 1 -0.61161,0.611611 0.61161113,0.61161113 0 0 1 -0.61161,-0.611611 0.61161113,0.61161113 0 0 1 0.61161,-0.611611 0.61161113,0.61161113 0 0 1 0.61161,0.611611 z"
+          transform="translate(0.47348992,-2.0314089)" />
+      </g>
+    </g>
+  </svg>
+</template>
+
+<script setup lang="ts">
+defineProps<{
+  colour?: string
+}>()
+</script>
