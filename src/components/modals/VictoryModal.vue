@@ -1,5 +1,5 @@
 <template>
-  <ModalTemplate>
+  <ModalTemplate :showModal="showVictoryModal">
     <p class="font-title text-5xl mb-2">Victory!</p>
     <p>You succesfully matched all the movies in {{ guesses }} guesses.</p>
   </ModalTemplate>

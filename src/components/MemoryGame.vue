@@ -65,6 +65,7 @@ function selectMovie(movie: Movie): void {
 
       // If last pair was matched
       if (guessedMovies.value.length === gameSize.value) {
+        showVictoryModal.value = true
         paused.value = true
       }
     }
