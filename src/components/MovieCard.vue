@@ -6,8 +6,7 @@
       || guessedMovies.includes(movie.title)
     )
   }" class="relative grid cursor-pointer duration-700 ease-in-out transform">
-    <div
-      class="w-full h-full col-[1/1] row-[1/1] bg-green-950 grid place-content-center border-dashed border-2 border-red-950">
+    <div class="w-full h-full col-[1/1] row-[1/1] bg-green-950 grid place-content-center border-2 border-white">
       <span class="text-2xl">
         <CrownIcon class="w-12" />
       </span>
