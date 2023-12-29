@@ -1,7 +1,7 @@
 <template>
-  <header class="fixed w-full bg-black bg-opacity-50 text-white py-3 px-4">
+  <header class="fixed w-full bg-black bg-opacity-30 backdrop-blur-sm text-white py-3 px-4">
     <div class="max-w-3xl mx-auto flex flex-row justify-between">
-      <p class="font-title text-3xl pt-2">Hallmark Christmatch</p>
+      <p class="font-title text-2xl md:text-3xl pt-2">Hallmark Christmatch</p>
       <nav class="flex flex-row gap-2 items-center">
         <a href="https://github.com/malthesers/hallmark-christmatch" aria-label="github repository link" target="_blank"
           rel="noopener noreferrer" class="duration-200 hover:opacity-50">
