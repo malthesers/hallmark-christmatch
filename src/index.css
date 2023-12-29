@@ -4,7 +4,8 @@
 
 @layer base {
   body {
-    @apply bg-[url('src/assets/background.jpg')] bg-repeat bg-center;
+    /* @apply bg-[url('src/assets/background.jpg')] bg-repeat bg-center; */
+    @apply bg-green-800;
   }
 }
 
