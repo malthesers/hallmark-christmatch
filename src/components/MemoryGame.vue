@@ -4,7 +4,7 @@
       <div class="flex flex-row justify-between text-2xl">
         <button @click="startGame(1000)"
           class="bg-green-900 bg-opacity-70 border-2 border-white px-3 py-2 rounded-lg duration-200 hover:bg-opacity-100">
-          <span>New Game</span>
+          <span>Restart</span>
         </button>
         <div class="flex flex-row items-center">
           <span>Guesses: </span>
@@ -93,7 +93,6 @@ function startGame(delay: number = 0): void {
     memoryMovies.value = shuffle(shuffle(movies.value).slice(0, gameSize.value).flatMap(movie => [movie, movie])).map((movie, index) => ({ ...movie, id: index }))
     // Sets paused state to false after update
     paused.value = false
-    console.log('start', memoryMovies.value)
   }, delay)
 }
 

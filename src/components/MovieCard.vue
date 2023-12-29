@@ -5,12 +5,10 @@
       || movie.id === secondMovie?.id
       || guessedMovies.includes(movie.title)
     )
-  }" class="relative grid cursor-pointer duration-300 ease-in-out transform
+  }" class="relative grid cursor-pointer duration-300 ease-in-out transform aspect-[10/15]
     child:w-full child:h-full child:col-[1/1] child:row-[1/1] child:border-2 child:border-white">
-    <div class="bg-green-950 grid place-content-center">
-      <span class="text-2xl">
-        <CrownIcon class="w-12" />
-      </span>
+    <div class="bg-green-950 grid">
+      <CrownIcon class="w-3/5 h-auto m-auto" />
     </div>
     <img :src="`src/assets/covers/${movie.cover}.jpg`" :alt="movie.title" class="object-cover backface-hidden">
   </article>

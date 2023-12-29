@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    /* @apply bg-[url('src/assets/background.jpg')] bg-repeat bg-center; */
-    @apply bg-green-900;
-  }
-}
-
 .counter-enter-active,
 .counter-leave-active {
   transition: opacity 0.5s ease;
