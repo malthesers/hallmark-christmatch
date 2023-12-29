@@ -43,12 +43,8 @@ const showVictoryModal: Ref<boolean> = ref(false)
 
 function selectMovie(movie: Movie): void {
   // If no movie chosen, set clicked movie as chosen
-  if (!firstMovie.value) {
+  if (!firstMovie.value || secondMovie.value) {
     firstMovie.value = movie
-  }
-
-  else if (secondMovie.value) {
-    firstMovie.value = null
     secondMovie.value = null
   }
 
