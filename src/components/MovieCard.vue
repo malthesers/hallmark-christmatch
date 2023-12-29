@@ -1,5 +1,5 @@
 <template>
-  <article :class="{
+  <article @click="validateGuess" :class="{
     'flipped': (
       movie.id === firstMovie?.id
       || movie.id === secondMovie?.id
@@ -17,12 +17,21 @@
 <script setup lang="ts">
 import type { Movie } from '@/types/movie';
 
-defineProps<{
+const props = defineProps<{
   movie: Movie
   firstMovie: Movie | null
   secondMovie: Movie | null
   guessedMovies: string[]
+  selectMovie: (movie: Movie) => void
 }>()
+
+function validateGuess(): void {
+  if (props.guessedMovies.includes(props.movie.title)) {
+    console.log('already guessed')
+  } else {
+    props.selectMovie(props.movie)
+  }
+}
 </script>
 
 <style scoped>

@@ -1,7 +1,7 @@
 <template>
   <main class="text-white min-h-[100dvh] grid place-content-center p-4 pt-20">
     <section class="flex flex-col gap-4">
-      <div class="flex flex-row justify-between text-2xl">
+      <!-- <div class="flex flex-row justify-between text-2xl">
         <button @click="startGame(1000)"
           class="bg-green-900 bg-opacity-70 border-2 border-white px-3 py-2 rounded-lg duration-200 hover:bg-opacity-100">
           <span>Restart</span>
@@ -12,10 +12,10 @@
             <span class="w-8 text-center" :key="guesses">{{ guesses }}</span>
           </Transition>
         </div>
-      </div>
+      </div> -->
       <div :class="{ 'pointer-events-none': paused }" class="max-w-xl grid grid-cols-5 gap-4">
         <MovieCard v-for="movie in memoryMovies" :movie="movie" :firstMovie="firstMovie" :secondMovie="secondMovie"
-          :guessedMovies="guessedMovies" @click="selectMovie(movie)" />
+          :guessedMovies="guessedMovies" :selectMovie="selectMovie" />
       </div>
     </section>
   </main>
