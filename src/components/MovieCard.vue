@@ -5,7 +5,7 @@
       || movie.id === secondMovie?.id
       || guessedMovies.includes(movie.title)
     )
-  }" class="relative grid cursor-pointer duration-700 ease-in-out transform
+  }" class="relative grid cursor-pointer duration-300 ease-in-out transform
     child:w-full child:h-full child:col-[1/1] child:row-[1/1] child:border-2 child:border-white">
     <div class="bg-green-950 grid place-content-center">
       <span class="text-2xl">
