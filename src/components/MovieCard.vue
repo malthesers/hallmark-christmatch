@@ -5,7 +5,7 @@
       || movie.id === secondMovie?.id
       || guessedMovies.includes(movie.title)
     )
-  }" class="relative grid cursor-pointer duration-300 ease-in-out transform aspect-[10/15]
+  }" class="relative grid cursor-pointer duration-300 ease-in-out transform shadow-2xl
     child:w-full child:h-full child:col-[1/1] child:row-[1/1] child:border-2 child:border-white">
     <div class="bg-green-950 grid">
       <CrownIcon class="w-3/5 h-auto m-auto" />

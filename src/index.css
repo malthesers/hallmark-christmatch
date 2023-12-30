@@ -4,7 +4,7 @@
 
 .counter-enter-active,
 .counter-leave-active {
-  transition: opacity 0.5s ease;
+  transition: opacity 500s ease;
 }
 
 .counter-enter-from,
@@ -14,7 +14,7 @@
 
 .modal-enter-active,
 .modal-leave-active {
-  transition: opacity 300ms ease;
+  transition: opacity 500ms ease;
 }
 
 .modal-enter-from,
