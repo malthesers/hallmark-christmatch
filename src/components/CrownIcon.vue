@@ -30,9 +30,3 @@
     </g>
   </svg>
 </template>
-
-<script setup lang="ts">
-defineProps<{
-  colour?: string
-}>()
-</script>
