@@ -17,5 +17,4 @@ defineEmits(['closeModal'])
 defineProps<{
   showModal: boolean
 }>()
-
 </script>
