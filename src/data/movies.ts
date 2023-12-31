@@ -56,8 +56,8 @@ const allMovies:Movie[] = [
     year: 2017
   },
   {
-    title: 'A Gift for Christmas',
-    cover: 'a-gift-for-christmas',
+    title: 'A Gift to Remember',
+    cover: 'a-gift-to-remember',
     description: 'A handsome stranger develops amnesia after a bibliophile crashes into him on her bicycle.',
     year: 2017
   },
