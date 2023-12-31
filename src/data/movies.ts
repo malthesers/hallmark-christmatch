@@ -8,12 +8,6 @@ const allMovies:Movie[] = [
     year: 2019
   },
   {
-    title: 'Angel of Christmas',
-    cover: 'angel-of-christmas',
-    description: 'After she finally gets the chance to pen her very first article, an aspiring newspaper writer digs into her family history to find the perfect Christmas story.',
-    year: 2015
-  },
-  {
     title: 'Christmas Under the Stars',
     cover: 'christmas-under-the-stars',
     description: 'A Christmas-tree lot helps two people rediscover their holiday spirit.',
@@ -66,6 +60,48 @@ const allMovies:Movie[] = [
     cover: 'christmas-in-rome',
     description: 'Angela, an American tour guide in Rome, agrees to teach a culture-shocked businessman named Oliver about the heart of Rome at Christmas.',
     year: 2019
+  },
+  {
+    title: 'Angel of Christmas',
+    cover: 'angel-of-christmas',
+    description: 'After she finally gets the chance to pen her very first article, an aspiring newspaper writer digs into her family history to find the perfect Christmas story.',
+    year: 2015
+  },
+  {
+    title: 'A Perfect Christmas',
+    cover: 'a-perfect-christmas',
+    description: 'A newlywed couple prepare to host their first family Christmas together, but things don\'t go according to plan.',
+    year: 2016
+  },
+  {
+    title: 'A Wish for Christmas',
+    cover: 'a-wish-for-christmas',
+    description: 'Sara Thomas is the type of woman who prefers to sit on the sidelines at work, but when her big idea for a Christmas initiative is stolen, she makes a wish to Santa that she\'ll finally have the courage to stand up for herself.',
+    year: 2016
+  },
+  {
+    title: 'Every Christmas Has a Story',
+    cover: 'every-christmas-has-a-story',
+    description: 'While on air, a TV personality accidentally admits she hates Christmas. When she goes to a small town to film a special to repair her image, the Christmas spirit begins to change her life.',
+    year: 2016
+  },
+  {
+    title: 'Christmas Cookies',
+    cover: 'christmas-cookies',
+    description: 'A corporate agent is sent to a small town to buy a cookie company and shut down its factory. When she starts falling in love with the factory\'s owner, the town\'s Christmas spirit over takes her.',
+    year: 2016
+  },
+  {
+    title: 'A December Bride',
+    cover: 'a-december-bride',
+    description: 'A holiday wedding brings no joy to the bride\'s cousin, who was literally left by the groom right at the altar. But she might find her true love there when she gains a fake fiancé.',
+    year: 2016
+  },
+  {
+    title: 'Broadcasting Christmas',
+    cover: 'broadcasting-christmas',
+    description: 'Two news broadcasters who previously were in love fight for a position as a morning talk show host that they both want, ultimately finding what made them like each other so much in the first place.',
+    year: 2016
   },
 ]
 
