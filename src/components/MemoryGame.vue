@@ -19,7 +19,6 @@
       </div>
     </section>
   </main>
-  <InstructionsModal @closeModal="showInstructionsModal = false" :showInstructionsModal="showInstructionsModal" />
   <VictoryModal @closeModal="showVictoryModal = false" :showVictoryModal="showVictoryModal" :guesses="guesses" />
 </template>
 
@@ -40,7 +39,6 @@ const secondMovie: Ref<Movie | null> = ref(null)
 const guessedMovies: Ref<string[]> = ref([])
 const guesses: Ref<number> = ref(0)
 
-const showInstructionsModal: Ref<boolean> = ref(false)
 const showVictoryModal: Ref<boolean> = ref(false)
 
 function selectMovie(movie: Movie): void {

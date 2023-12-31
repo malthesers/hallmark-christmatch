@@ -14,8 +14,11 @@
       </nav>
     </div>
   </header>
+  <InstructionsModal @closeModal="showInstructionsModal = false" :showInstructionsModal="showInstructionsModal" />
 </template>
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
+
+const showInstructionsModal: Ref<boolean> = ref(false)
 </script>
