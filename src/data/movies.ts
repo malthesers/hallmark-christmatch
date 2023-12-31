@@ -151,6 +151,12 @@ const allMovies:Movie[] = [
     description: 'Angela, an American tour guide in Rome, agrees to teach a culture-shocked businessman named Oliver about the heart of Rome at Christmas.',
     year: 2019
   },
+  {
+    title: 'Christmas She Wrote',
+    cover: 'christmas-she-wrote',
+    description: 'Kaleigh is fired as popular column writer by the new editor at The Globe in NYC. She heads to her sister near Tahoe, CA, and helps in her bakery the weeks before Xmas. The single editor shows up - to right a wrong.',
+    year: 2020
+  },
 ]
 
 export { allMovies }
