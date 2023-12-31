@@ -32,12 +32,6 @@ const allMovies:Movie[] = [
     year: 2019
   },
   {
-    title: 'Finding Santa',
-    cover: 'finding-santa',
-    description: 'Grace is thrilled to be taking over the town\'s Christmas parade, but when the man playing St. Nick breaks his arm, she needs to find a replacement, even if the replacement is unwilling.',
-    year: 2017
-  },
-  {
     title: 'A Blue Ridge Mountain Christmas',
     cover: 'a-blue-ridge-mountain-christmas',
     description: 'Hotel manager Willow returns to her stunning Virginia hometown to help her sister plan a Christmas wedding at the inn her family once owned. She must work with current owner and single dad David, who wants to let go of the past.',
@@ -102,6 +96,48 @@ const allMovies:Movie[] = [
     cover: 'broadcasting-christmas',
     description: 'Two news broadcasters who previously were in love fight for a position as a morning talk show host that they both want, ultimately finding what made them like each other so much in the first place.',
     year: 2016
+  },
+  {
+    title: 'Christmas in Homestead',
+    cover: 'christmas-in-homestead',
+    description: 'Life is turned upside down for a small town mayor when a famous actress arrives to shoot her new Christmas movie.',
+    year: 2016
+  },
+  {
+    title: 'Finding Santa',
+    cover: 'finding-santa',
+    description: 'Grace is thrilled to be taking over the town\'s Christmas parade, but when the man playing St. Nick breaks his arm, she needs to find a replacement, even if the replacement is unwilling.',
+    year: 2017
+  },
+  {
+    title: 'A Gift for Christmas',
+    cover: 'a-gift-for-christmas',
+    description: 'A handsome stranger develops amnesia after a bibliophile crashes into him on her bicycle.',
+    year: 2017
+  },
+  {
+    title: 'The Mistletoe Inn',
+    cover: 'the-mistletoe-inn',
+    description: 'An aspiring novelist signs up for a week-long writing workshop at the Mistletoe Inn.',
+    year: 2017
+  },
+  {
+    title: 'The Christmas Cottage',
+    cover: 'the-christmas-cottage',
+    description: 'While helping to organize her best friend\'s Christmas wedding, a successful designer reconnects with an old flame',
+    year: 2017
+  },
+  {
+    title: 'Sharing Christmas',
+    cover: 'sharing-christmas',
+    description: 'Stephanie Nichols takes over the Christmas Shop, but a property developer has bought the building and is terminating the retail leases. She finds help and love from Michael Kilpatrick, who works for the developer.',
+    year: 2017
+  },
+  {
+    title: 'Christmas Encore',
+    cover: 'christmas-encore',
+    description: 'A struggling actress auditions for the lead role in a theater production of \'A Christmas Carol\'.',
+    year: 2017
   },
 ]
 
