@@ -19,7 +19,8 @@
       </div>
     </section>
   </main>
-  <VictoryModal @closeModal="showVictoryModal = false" :showVictoryModal="showVictoryModal" :guesses="guesses" />
+  <VictoryModal @closeModal="showVictoryModal = false" :showVictoryModal="showVictoryModal" :guesses="guesses"
+    :record="record" />
 </template>
 
 <script setup lang="ts">
@@ -38,6 +39,7 @@ const secondMovie: Ref<Movie | null> = ref(null)
 
 const guessedMovies: Ref<string[]> = ref([])
 const guesses: Ref<number> = ref(0)
+const record: Ref<number> = ref(0)
 
 const showVictoryModal: Ref<boolean> = ref(false)
 
@@ -63,6 +65,10 @@ function selectMovie(movie: Movie): void {
       if (guessedMovies.value.length === gameSize.value) {
         showVictoryModal.value = true
         paused.value = true
+
+        if (!record.value || record.value < guesses.value) {
+          record.value = guesses.value
+        }
       }
     }
 
@@ -92,5 +98,12 @@ function startGame(delay: number = 0): void {
   }, delay)
 }
 
-onMounted(() => startGame())
+watch(record, () => {
+  // Save record to localStorage
+  localStorage.setItem('christmatch/record', String(record.value));
+})
+
+onMounted(() => {
+  startGame()
+})
 </script>
