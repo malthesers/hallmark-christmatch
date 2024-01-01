@@ -14,7 +14,7 @@
         </div>
       </div> -->
       <div :class="{ 'pointer-events-none': paused }" class="max-w-xl grid grid-cols-5 gap-4">
-        <MovieCard v-for="(movie, index) in memoryMovies" :key="index" :movie="movie" :firstMovie="firstMovie"
+        <MovieCard v-for="(movie, index) in pairedMovies" :key="index" :movie="movie" :firstMovie="firstMovie"
           :secondMovie="secondMovie" :guessedMovies="guessedMovies" :selectMovie="selectMovie" />
       </div>
     </section>
@@ -32,7 +32,7 @@ const paused: Ref<boolean> = ref(true)
 const gameSize: Ref<number> = ref(10)
 
 const movies: Ref<Movie[]> = ref(allMovies)
-const memoryMovies: Ref<Movie[]> = ref([])
+const pairedMovies: Ref<Movie[]> = ref([])
 
 const firstMovie: Ref<Movie | null> = ref(null)
 const secondMovie: Ref<Movie | null> = ref(null)
@@ -74,7 +74,7 @@ function selectMovie(movie: Movie): void {
 
     // If clicked incorrect movie
     else if (firstMovie.value.title !== movie.title) {
-      console.log('wrong')
+      // Nothing happens - so far
     }
   }
 }
@@ -92,7 +92,7 @@ function startGame(delay: number = 0): void {
   // Create timeout to change movies after flip animation is done
   setTimeout(() => {
     // Shuffles array and cuts to first 10 duplicating each of those into another shuffled array adding id based on index
-    memoryMovies.value = shuffle(shuffle(movies.value).slice(0, gameSize.value).flatMap(movie => [movie, movie])).map((movie, index) => ({ ...movie, id: index }))
+    pairedMovies.value = shuffle(shuffle(movies.value).slice(0, gameSize.value).flatMap(movie => [movie, movie])).map((movie, index) => ({ ...movie, id: index }))
     // Sets paused state to false after update
     paused.value = false
   }, delay)
@@ -102,8 +102,10 @@ function startGame(delay: number = 0): void {
 watch(record, () => localStorage.setItem('christmatch/record', String(record.value)))
 
 onMounted(() => {
+  // Load saved record if any
   if (localStorage.getItem('christmatch/record')) record.value = parseInt(localStorage.getItem('christmatch/record') as string)
 
+  // Start initial game
   startGame()
 })
 </script>
