@@ -70,7 +70,7 @@ const allMovies:Movie[] = [
   {
     title: 'The Christmas Cottage',
     cover: 'the-christmas-cottage',
-    description: 'While helping to organize her best friend\'s Christmas wedding, a successful designer reconnects with an old flame',
+    description: 'While helping to organize her best friend\'s Christmas wedding, a successful designer reconnects with an old flame.',
     year: 2017
   },
   {
