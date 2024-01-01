@@ -23,5 +23,4 @@ defineProps<{
   guesses: number
   record: number
 }>()
-
 </script>

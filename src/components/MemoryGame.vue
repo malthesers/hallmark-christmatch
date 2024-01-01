@@ -66,7 +66,7 @@ function selectMovie(movie: Movie): void {
         showVictoryModal.value = true
         paused.value = true
 
-        if (!record.value || record.value < guesses.value) {
+        if (!record.value || guesses.value < record.value) {
           record.value = guesses.value
         }
       }
@@ -98,12 +98,12 @@ function startGame(delay: number = 0): void {
   }, delay)
 }
 
-watch(record, () => {
-  // Save record to localStorage
-  localStorage.setItem('christmatch/record', String(record.value));
-})
+// Save record to localStorage
+watch(record, () => localStorage.setItem('christmatch/record', String(record.value)))
 
 onMounted(() => {
+  if (localStorage.getItem('christmatch/record')) record.value = parseInt(localStorage.getItem('christmatch/record') as string)
+
   startGame()
 })
 </script>
