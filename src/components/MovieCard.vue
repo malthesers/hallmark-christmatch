@@ -1,5 +1,5 @@
 <template>
-  <article ref="movieCard" @click="validateGuess" :class="{
+  <article ref="movieCard" @click="validateGuess" @animationend="movieCard?.classList.remove('shake')" :class="{
     'flipped': (
       movie.id === firstMovie?.id
       || movie.id === secondMovie?.id
