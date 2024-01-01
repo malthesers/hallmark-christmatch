@@ -1,5 +1,5 @@
 <template>
-  <article @click="validateGuess" :class="{
+  <article ref="movieCard" @click="validateGuess" :class="{
     'flipped': (
       movie.id === firstMovie?.id
       || movie.id === secondMovie?.id
@@ -25,10 +25,14 @@ const props = defineProps<{
   selectMovie: (movie: Movie) => void
 }>()
 
+const movieCard: Ref<HTMLElement | null> = ref(null)
+
 function validateGuess(): void {
-  if (props.guessedMovies.includes(props.movie.title)) {
-    console.log('already guessed')
+  if (movieCard.value && props.guessedMovies.includes(props.movie.title)) {
+    // Shake if already guessed
+    movieCard.value.classList.add('shake')
   } else {
+    // Otherwise set movie as selected
     props.selectMovie(props.movie)
   }
 }
