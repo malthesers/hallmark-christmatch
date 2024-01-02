@@ -1,7 +1,13 @@
 {
-  "name": "vue-boilerplate",
+  "name": "hallmark-christmatch",
+  "description": "A concentration and memory game inspired by the most unpredictable and unique Christmas movies.",
+  "author": "Malthesers (Malthe Kusk Lauritsen)",
   "version": "0.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/malthesers/hallmark-christmatch"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
