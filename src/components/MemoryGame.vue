@@ -13,7 +13,7 @@
           </Transition>
         </div>
       </div> -->
-      <div :class="{ 'pointer-events-none': paused }" class="max-w-xl grid grid-cols-5 gap-4">
+      <div :class="{ 'pointer-events-none': paused }" class="max-w-xl grid grid-cols-5 gap-2 sm:gap-4">
         <MovieCard v-for="(movie, index) in pairedMovies" :key="index" :movie="movie" :firstMovie="firstMovie"
           :secondMovie="secondMovie" :guessedMovies="guessedMovies" :selectMovie="selectMovie" />
       </div>
