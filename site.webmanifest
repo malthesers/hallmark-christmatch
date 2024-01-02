@@ -1,0 +1,68 @@
+{
+  "name": "Hallmark Christmatch",
+  "short_name": "Hallmark Christmatch",
+  "description": "A concentration and memory game inspired by the most unpredictable and unique Christmas movies.",
+  "start_url": "/hallmark-christmatch/",
+  "background_color": "#052E16",
+  "theme_color": "#052E16",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay"],
+  "lang": "en",
+  "categories": ["entertainment", "games"],
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "maskable-icon.png",
+      "sizes": "210x210",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/mobile1.jpg",
+      "type": "image/jpg",
+      "sizes": "724x1408",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screenshots/mobile2.jpg",
+      "type": "image/jpg",
+      "sizes": "724x1408",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screenshots/mobile3.jpg",
+      "type": "image/jpg",
+      "sizes": "724x1408",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screenshots/desktop1.jpg",
+      "type": "image/jpg",
+      "sizes": "838x492",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshots/desktop2.jpg",
+      "type": "image/jpg",
+      "sizes": "838x492",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshots/desktop3.jpg",
+      "type": "image/jpg",
+      "sizes": "838x492",
+      "form_factor": "wide"
+    }
+  ]
+}
