@@ -5,12 +5,13 @@
       || movie.id === secondMovie?.id
       || guessedMovies.includes(movie.title)
     )
-  }" class="relative grid cursor-pointer duration-300 ease-in-out transform shadow-2xl
+  }" class=" w-[60px] h-[90px] sm:w-[90px] sm:h-[135px] md:w-[100px] md:h-[150px] grid cursor-pointer duration-300 ease-in-out transform shadow-2xl
     child:w-full child:h-full child:col-[1/1] child:row-[1/1] child:border-2 child:border-white">
     <div class="bg-green-950 grid">
       <CrownIcon class="w-3/5 h-auto m-auto" />
     </div>
-    <img :src="`/covers/${movie.cover}.jpg`" :alt="movie.title" class="object-cover backface-hidden">
+    <div :style="{ backgroundImage: `url('covers/${movie.cover}.jpg')` }" class=" bg-cover bg-center backface-hidden">
+    </div>
   </article>
 </template>
 
@@ -44,7 +45,7 @@ article {
   transform-style: preserve-3d;
 }
 
-img {
+.backface-hidden {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
