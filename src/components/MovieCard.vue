@@ -10,7 +10,7 @@
     <div class="bg-green-950 grid">
       <CrownIcon class="w-3/5 h-auto m-auto" />
     </div>
-    <img :src="`src/assets/covers/${movie.cover}.jpg`" :alt="movie.title" class="object-cover backface-hidden">
+    <img :src="`/covers/${movie.cover}.jpg`" :alt="movie.title" class="object-cover backface-hidden">
   </article>
 </template>
 
