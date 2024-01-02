@@ -29,38 +29,38 @@
   ],
   "screenshots": [
     {
-      "src": "screenshots/mobile1.png",
-      "type": "image/png",
+      "src": "screenshots/mobile1.jpg",
+      "type": "image/jpg",
       "sizes": "684x1140",
       "form_factor": "narrow"
     },
     {
-      "src": "screenshots/mobile2.png",
-      "type": "image/png",
+      "src": "screenshots/mobile2.jpg",
+      "type": "image/jpg",
       "sizes": "684x1140",
       "form_factor": "narrow"
     },
     {
-      "src": "screenshots/mobile3.png",
-      "type": "image/png",
+      "src": "screenshots/mobile3.jpg",
+      "type": "image/jpg",
       "sizes": "684x1140",
       "form_factor": "narrow"
     },
     {
-      "src": "screenshots/desktop1.png",
-      "type": "image/png",
+      "src": "screenshots/desktop1.jpg",
+      "type": "image/jpg",
       "sizes": "1088x624",
       "form_factor": "wide"
     },
     {
-      "src": "screenshots/desktop2.png",
-      "type": "image/png",
+      "src": "screenshots/desktop2.jpg",
+      "type": "image/jpg",
       "sizes": "1088x624",
       "form_factor": "wide"
     },
     {
-      "src": "screenshots/desktop3.png",
-      "type": "image/png",
+      "src": "screenshots/desktop3.jpg",
+      "type": "image/jpg",
       "sizes": "1088x624",
       "form_factor": "wide"
     }
