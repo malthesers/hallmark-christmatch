@@ -7,6 +7,7 @@ import AutoImport from 'unplugin-auto-import/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/hallmark-christmatch/',
   plugins: [vue(), Components({}), AutoImport({ imports: ['vue'], dts: './auto-imports.d.ts' })],
   resolve: {
     alias: {
