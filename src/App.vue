@@ -2,18 +2,6 @@
   <SantasLittleHeader :disableRestart="guesses === 0" :startGame="startGame" />
   <main class="text-white min-h-[100dvh] grid place-content-center p-4 pt-20">
     <section class="flex flex-col gap-4">
-      <!-- <div class="flex flex-row justify-between text-xl">
-        <button @click="startGame(500)"
-          class="bg-green-900 bg-opacity-70 border-2 border-white px-3 py-2 rounded-lg duration-200 hover:bg-opacity-100">
-          <span>Restart</span>
-        </button>
-        <div class="flex flex-row items-center">
-          <span>Guesses: </span>
-          <Transition name="counter" mode="out-in">
-            <span class="w-8 text-center" :key="guesses">{{ guesses }}</span>
-          </Transition>
-        </div>
-      </div> -->
       <div :class="{ 'pointer-events-none': paused }" class="grid grid-cols-5 gap-2 sm:gap-4">
         <MovieCard v-for="(movie, index) in pairedMovies" :key="index" :movie="movie" :firstMovie="firstMovie"
           :secondMovie="secondMovie" :guessedMovies="guessedMovies" :selectMovie="selectMovie" />
