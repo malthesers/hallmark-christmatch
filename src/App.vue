@@ -1,5 +1,5 @@
 <template>
-  <SantasLittleHeader :startGame="startGame" />
+  <SantasLittleHeader :disableRestart="guesses === 0" :startGame="startGame" />
   <main class="text-white min-h-[100dvh] grid place-content-center p-4 pt-20">
     <section class="flex flex-col gap-4">
       <!-- <div class="flex flex-row justify-between text-xl">
