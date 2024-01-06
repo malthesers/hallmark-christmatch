@@ -1,4 +1,4 @@
-# <img src="/public/favicon-32x32.png" alt="hallmark christmatch logo" align="center"> Hallmark Christmatch
+<h1 align="center"><img src="/public/readme/title.png" alt="hallmark christmatch logo"></h1>
 
 A concentration and memory game inspired by the most unpredictable and unique Christmas movies.
 
