@@ -1,8 +1,8 @@
 <h1 align="center"><img src="/public/readme/title.png" alt="hallmark christmatch logo"></h1>
 
-A concentration and memory game inspired by the most unpredictable and unique Christmas movies.
+<p align="center">A concentration and memory game inspired by the most unpredictable and unique Christmas movies.</p>
 
-Embrace the memorable Christmas spirit [here](https://malthesers.github.io/hallmark-christmatch/).
+<p align="center">Embrace the memorable Christmatch spirit <a href="https://malthesers.github.io/hallmark-christmatch/">here</a>.</p>
 
 ## 📋 Instructions
 
