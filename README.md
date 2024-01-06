@@ -12,6 +12,10 @@ Start by clicking a card to flip it face-up revealing the movie cover, then clic
 
 Proceed through all the cards as you memorise the location of the different movies, so you eventually will be able to match them all.
 
+## 🎥 Movies
+
+There are **28** *unique* movies. Each time a game is started, 10 movies will be randomly chosen for that game.
+
 ## 🙌 Support
 
 ...is for me? 😳👉👈
