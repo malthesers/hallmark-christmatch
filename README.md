@@ -16,6 +16,8 @@ Proceed through all the cards as you memorise the location of the different movi
 
 There are **28** *unique* movies. Each time a game is started, 10 movies will be randomly chosen for that game.
 
+Will you be able to properly distinguish them all?
+
 ## 🙌 Support
 
 ...is for me? 😳👉👈
