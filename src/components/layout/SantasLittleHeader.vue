@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed w-full bg-black bg-opacity-30 backdrop-blur-sm text-white sm:py-2 px-3 sm:px-4">
+  <header class="fixed z-10 w-full bg-black bg-opacity-30 backdrop-blur-sm text-white sm:py-2 px-3 sm:px-4">
     <div class="max-w-3xl mx-auto flex flex-row justify-between">
       <!-- Left side -->
       <p class="font-title text-2xl md:text-3xl pt-2">Hallmark Christmatch</p>
