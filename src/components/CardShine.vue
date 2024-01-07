@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full h-full overflow-hidden">
-    <div class="absolute w-full h-full bg-gradient-to-r from-transparent via-white/50 to-transparent slide">
+    <div class="absolute w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent slide">
     </div>
   </div>
 </template>
