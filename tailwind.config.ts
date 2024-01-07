@@ -8,7 +8,11 @@ module.exports = {
     fontFamily: {
       title: ['Sacramento, serif, system-ui']
     },
-    extend: {},
+    extend: {
+      screens: {
+        'xs': '420px'
+      }
+    },
   },
   plugins: [
     plugin(function({ addVariant }) {
