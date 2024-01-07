@@ -1,8 +1,8 @@
-# <img src="/public/favicon-32x32.png" alt="hallmark christmatch logo" align="center"> Hallmark Christmatch
+<h1 align="center"><img src="/public/readme/title.png" alt="hallmark christmatch logo"></h1>
 
-A concentration and memory game inspired by the most unpredictable and unique Christmas movies.
+<p align="center">A concentration and memory game inspired by the most unpredictable and unique Christmas movies.</p>
 
-Embrace the memorable Christmas spirit [here](https://malthesers.github.io/hallmark-christmatch/).
+<p align="center">Embrace the memorable Christmatch spirit <a href="https://malthesers.github.io/hallmark-christmatch/">here</a>.</p>
 
 ## 📋 Instructions
 
@@ -11,6 +11,12 @@ The grid contains **20** clickable cards those being **10** pairs of Hallmark Ch
 Start by clicking a card to flip it face-up revealing the movie cover, then click a new card to reveal it and see if they are the same movie.
 
 Proceed through all the cards as you memorise the location of the different movies, so you eventually will be able to match them all.
+
+## 🎥 Movies
+
+There are **28** *unique* movies. Each time a game is started, 10 movies will be randomly chosen for that game.
+
+Will you be able to properly distinguish them all?
 
 ## 🙌 Support
 
