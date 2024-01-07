@@ -9,7 +9,7 @@
     </div>
     <!-- Front side -->
     <div :style="{ backgroundImage: `url('covers/${movie.cover}.jpg')` }" class=" bg-cover bg-center backface-hidden">
-      <CardShine :class="[guessedMovies.includes(movie.title) ? 'opacity-100' : 'opacity-0']" />
+      <CardShine v-if="guessedMovies.includes(movie.title)" />
     </div>
   </article>
 </template>
