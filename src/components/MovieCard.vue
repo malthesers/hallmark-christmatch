@@ -35,7 +35,7 @@ function validateGuess(): void {
     }
 
     // Shake if already selected
-    else if (props.movie.id === props.firstMovie?.id) {
+    else if (props.movie.id === props.firstMovie?.id && !props.secondMovie) {
       movieCard.value.classList.add('shake')
     }
 
