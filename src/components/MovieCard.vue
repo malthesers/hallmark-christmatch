@@ -28,12 +28,21 @@ const props = defineProps<{
 const movieCard: Ref<HTMLElement | null> = ref(null)
 
 function validateGuess(): void {
-  if (movieCard.value && props.guessedMovies.includes(props.movie.title)) {
+  if (movieCard.value) {
     // Shake if already guessed
-    movieCard.value.classList.add('shake')
-  } else {
-    // Otherwise set movie as selected
-    props.selectMovie(props.movie)
+    if (props.guessedMovies.includes(props.movie.title)) {
+      movieCard.value.classList.add('shake')
+    }
+
+    // Shake if already selected
+    else if (props.movie.id === props.firstMovie?.id) {
+      movieCard.value.classList.add('shake')
+    }
+
+    // Otherwise forward to selectMovie method
+    else {
+      props.selectMovie(props.movie)
+    }
   }
 }
 </script>
