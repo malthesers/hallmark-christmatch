@@ -14,7 +14,9 @@ Proceed through all the cards as you memorise the location of the different movi
 
 ## 🎥 Movies
 
-There are **28** *unique* movies. Each time a game is started, 10 movies will be randomly chosen for that game.
+There are **28** *unique* movies released from 2015 through 2020.
+
+Each time a game is started, 10 movies will be randomly chosen for that game.
 
 Will you be able to properly distinguish them all?
 
