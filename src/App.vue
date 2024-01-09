@@ -1,5 +1,5 @@
 <template>
-  <BackgroundScreen />
+  <CeremonialScene />
   <SantasLittleHeader :disableRestart="guesses === 0" :startGame="startGame" />
   <main class="text-white min-h-[100dvh] grid place-content-center p-4 pt-[98px] xs:pt-[60px]">
     <section class="flex flex-col gap-4">
