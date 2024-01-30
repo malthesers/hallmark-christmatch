@@ -1,6 +1,6 @@
-import type { Movie } from "@/types/movie";
+import type { Movie } from '@/types/movie'
 
-const allMovies:Movie[] = [
+const allMovies: Movie[] = [
   {
     title: 'Angel of Christmas',
     cover: 'angel-of-christmas',
@@ -10,13 +10,13 @@ const allMovies:Movie[] = [
   {
     title: 'A Perfect Christmas',
     cover: 'a-perfect-christmas',
-    description: 'A newlywed couple prepare to host their first family Christmas together, but things don\'t go according to plan.',
+    description: "A newlywed couple prepare to host their first family Christmas together, but things don't go according to plan.",
     year: 2016
   },
   {
     title: 'A Wish for Christmas',
     cover: 'a-wish-for-christmas',
-    description: 'Sara Thomas is the type of woman who prefers to sit on the sidelines at work, but when her big idea for a Christmas initiative is stolen, she makes a wish to Santa that she\'ll finally have the courage to stand up for herself.',
+    description: "Sara Thomas is the type of woman who prefers to sit on the sidelines at work, but when her big idea for a Christmas initiative is stolen, she makes a wish to Santa that she'll finally have the courage to stand up for herself.",
     year: 2016
   },
   {
@@ -28,13 +28,13 @@ const allMovies:Movie[] = [
   {
     title: 'Christmas Cookies',
     cover: 'christmas-cookies',
-    description: 'A corporate agent is sent to a small town to buy a cookie company and shut down its factory. When she starts falling in love with the factory\'s owner, the town\'s Christmas spirit over takes her.',
+    description: "A corporate agent is sent to a small town to buy a cookie company and shut down its factory. When she starts falling in love with the factory's owner, the town's Christmas spirit over takes her.",
     year: 2016
   },
   {
     title: 'A December Bride',
     cover: 'a-december-bride',
-    description: 'A holiday wedding brings no joy to the bride\'s cousin, who was literally left by the groom right at the altar. But she might find her true love there when she gains a fake fiancé.',
+    description: "A holiday wedding brings no joy to the bride's cousin, who was literally left by the groom right at the altar. But she might find her true love there when she gains a fake fiancé.",
     year: 2016
   },
   {
@@ -52,7 +52,7 @@ const allMovies:Movie[] = [
   {
     title: 'Finding Santa',
     cover: 'finding-santa',
-    description: 'Grace is thrilled to be taking over the town\'s Christmas parade, but when the man playing St. Nick breaks his arm, she needs to find a replacement, even if the replacement is unwilling.',
+    description: "Grace is thrilled to be taking over the town's Christmas parade, but when the man playing St. Nick breaks his arm, she needs to find a replacement, even if the replacement is unwilling.",
     year: 2017
   },
   {
@@ -70,7 +70,7 @@ const allMovies:Movie[] = [
   {
     title: 'The Christmas Cottage',
     cover: 'the-christmas-cottage',
-    description: 'While helping to organize her best friend\'s Christmas wedding, a successful designer reconnects with an old flame.',
+    description: "While helping to organize her best friend's Christmas wedding, a successful designer reconnects with an old flame.",
     year: 2017
   },
   {
@@ -82,19 +82,19 @@ const allMovies:Movie[] = [
   {
     title: 'Christmas Encore',
     cover: 'christmas-encore',
-    description: 'A struggling actress auditions for the lead role in a theater production of \'A Christmas Carol\'.',
+    description: "A struggling actress auditions for the lead role in a theater production of 'A Christmas Carol'.",
     year: 2017
   },
   {
     title: 'Christmas on Honeysuckle Lane',
     cover: 'christmas-on-honeysuckle-lane',
-    description: 'Emma returns home to celebrate Christmas for the last time with her siblings in the house they grew up in. After their parents\' recent passing, the siblings reluctantly agree to sell the family home on Honeysuckle Lane.',
+    description: "Emma returns home to celebrate Christmas for the last time with her siblings in the house they grew up in. After their parents' recent passing, the siblings reluctantly agree to sell the family home on Honeysuckle Lane.",
     year: 2018
   },
   {
     title: 'Once Upon a Christmas Miracle',
     cover: 'once-upon-a-christmas-miracle',
-    description: 'This holiday romance is based on the incredible story about organ donor Chris Dempsey and recipient Heather Krueger, who were brought into one another\'s lives by a transplant surgery that led to a miraculous romance.',
+    description: "This holiday romance is based on the incredible story about organ donor Chris Dempsey and recipient Heather Krueger, who were brought into one another's lives by a transplant surgery that led to a miraculous romance.",
     year: 2018
   },
   {
@@ -118,13 +118,13 @@ const allMovies:Movie[] = [
   {
     title: 'Merry & Bright',
     cover: 'merry-and-bright',
-    description: 'Cate\'s mom is setting up dates for her CEO daughter. When she meets Gabe a week before Christmas, she assumes, he\'s a date, but he\'s a corporate recovery consultant for her candy cane company. He\'s also single.',
+    description: "Cate's mom is setting up dates for her CEO daughter. When she meets Gabe a week before Christmas, she assumes, he's a date, but he's a corporate recovery consultant for her candy cane company. He's also single.",
     year: 2019
   },
   {
     title: 'Holiday Hearts',
     cover: 'holiday-hearts',
-    description: 'While planning an annual Christmas party, Peyton is forced together with Ben to care for a friend\'s daughter. While finding their Christmas spirit, will there be some romance along the way.',
+    description: "While planning an annual Christmas party, Peyton is forced together with Ben to care for a friend's daughter. While finding their Christmas spirit, will there be some romance along the way.",
     year: 2019
   },
   {
@@ -136,7 +136,7 @@ const allMovies:Movie[] = [
   {
     title: 'Nostalgic Christmas',
     cover: 'nostalgic-christmas',
-    description: 'Anne seems to have it all as a driven toy buyer in New York City, but her father\'s retirement signaling the closing of the town\'s beloved toy store brings the city girl back to her small-town roots.',
+    description: "Anne seems to have it all as a driven toy buyer in New York City, but her father's retirement signaling the closing of the town's beloved toy store brings the city girl back to her small-town roots.",
     year: 2019
   },
   {
@@ -156,7 +156,7 @@ const allMovies:Movie[] = [
     cover: 'christmas-she-wrote',
     description: 'Kaleigh is fired as popular column writer by the new editor at The Globe in NYC. She heads to her sister near Tahoe, CA, and helps in her bakery the weeks before Xmas. The single editor shows up - to right a wrong.',
     year: 2020
-  },
+  }
 ]
 
 export { allMovies }

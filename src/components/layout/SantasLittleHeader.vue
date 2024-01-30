@@ -6,23 +6,30 @@
       <!-- Right side -->
       <nav class="flex flex-row gap-[2px] xs:gap-1 place-content-center xs:items-center">
         <!-- Restart button -->
-        <button @click="startGame(500)" aria-label="open instructions button"
-          :class="{ 'opacity-50 pointer-events-none': disableRestart }" class="duration-200 hover:opacity-50">
+        <button
+          @click="startGame(500)"
+          aria-label="open instructions button"
+          :class="{ 'opacity-50 pointer-events-none': disableRestart }"
+          class="duration-200 hover:opacity-50"
+        >
           <Icon icon="mdi:refresh-circle" class="size-9" />
         </button>
         <!-- Instructions button -->
-        <button @click="showInstructionsModal = true" aria-label="open instructions button"
-          class="duration-200 hover:opacity-50">
+        <button @click="showInstructionsModal = true" aria-label="open instructions button" class="duration-200 hover:opacity-50">
           <Icon icon="mdi:help-circle" class="size-9" />
         </button>
         <!-- GitHub link -->
-        <a href="https://github.com/malthesers/hallmark-christmatch" aria-label="github repository link" target="_blank"
-          rel="noopener noreferrer" class="duration-200 hover:opacity-50">
+        <a
+          href="https://github.com/malthesers/hallmark-christmatch"
+          aria-label="github repository link"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="duration-200 hover:opacity-50"
+        >
           <Icon icon="mdi:github" class="size-9" />
         </a>
         <!-- Ko-fi link -->
-        <a href="https://ko-fi.com/malthesers" aria-label="kofi link" target="_blank" rel="noopener noreferrer"
-          class="duration-200 hover:opacity-50">
+        <a href="https://ko-fi.com/malthesers" aria-label="kofi link" target="_blank" rel="noopener noreferrer" class="duration-200 hover:opacity-50">
           <Icon icon="simple-icons:kofi" class="size-[38px] ml-1" />
         </a>
       </nav>

@@ -1,7 +1,6 @@
 <template>
   <div class="relative size-full overflow-hidden pointer-events-none">
-    <div class="absolute size-full bg-gradient-to-r from-transparent via-white/70 to-transparent slide">
-    </div>
+    <div class="absolute size-full bg-gradient-to-r from-transparent via-white/70 to-transparent slide"></div>
   </div>
 </template>
 
