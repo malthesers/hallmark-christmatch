@@ -1,7 +1,7 @@
 <template>
   <CeremonialScene />
   <SantasLittleHeader :disableRestart="guesses === 0" :startGame="startGame" />
-  <main class="text-white min-h-[100dvh] grid place-content-center p-4 pt-[98px] xs:pt-[60px]">
+  <main class="text-white min-h-dvh grid place-content-center p-4 pt-[98px] xs:pt-[60px]">
     <section class="flex flex-col gap-4">
       <div :class="{ 'pointer-events-none': paused }" class="grid grid-cols-5 gap-2 sm:gap-4">
         <MovieCard v-for="(movie, index) in pairedMovies" :key="index" :movie="movie" :firstMovie="firstMovie"
