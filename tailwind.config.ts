@@ -29,10 +29,8 @@ module.exports = {
           'backface-visibility': 'hidden'
         },
         '.grid-center': {
-          'grid-column-start': '1',
-          'grid-column-end': '1',
-          'grid-row-start': '1',
-          'grid-row-end': '1'
+          'grid-column': '1/1',
+          'grid-row': '1/1'
         }
       })
     }

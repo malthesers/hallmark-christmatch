@@ -6,7 +6,7 @@
     :class="{
       flipped: movie.id === firstMovie?.id || movie.id === secondMovie?.id || guessedMovies.includes(movie.title)
     }"
-    class="w-[60px] sm:w-[90px] md:w-[100px] aspect-[6/9] preserve-3d grid cursor-pointer duration-300 ease-in-out transform shadow-2xl *:size-full *:col-[1/1] *:row-[1/1] *:border-2 *:border-white"
+    class="w-[60px] sm:w-[90px] md:w-[100px] aspect-[6/9] preserve-3d grid cursor-pointer duration-300 ease-in-out transform shadow-2xl *:size-full *:grid-center *:border-2 *:border-white"
   >
     <!-- Back side -->
     <div class="bg-green-950 grid">
