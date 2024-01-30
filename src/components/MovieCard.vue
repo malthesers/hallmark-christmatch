@@ -6,7 +6,7 @@
     :class="{
       flipped: movie.id === firstMovie?.id || movie.id === secondMovie?.id || guessedMovies.includes(movie.title)
     }"
-    class="w-[60px] h-[90px] sm:w-[90px] sm:h-[135px] md:w-[100px] md:h-[150px] grid cursor-pointer duration-300 ease-in-out transform shadow-2xl *:size-full *:col-[1/1] *:row-[1/1] *:border-2 *:border-white"
+    class="w-[60px] h-[90px] sm:w-[90px] sm:h-[135px] md:w-[100px] md:h-[150px] preserve-3d grid cursor-pointer duration-300 ease-in-out transform shadow-2xl *:size-full *:col-[1/1] *:row-[1/1] *:border-2 *:border-white"
   >
     <!-- Back side -->
     <div class="bg-green-950 grid">
@@ -51,19 +51,3 @@ function validateGuess(): void {
   }
 }
 </script>
-
-<style scoped>
-article {
-  transform: perspective(40rem) rotateY(180deg);
-  transform-style: preserve-3d;
-}
-
-.backface-hidden {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flipped {
-  transform: rotateY(0);
-}
-</style>
