@@ -2,12 +2,12 @@
   <ModalTemplate @closeModal="$emit('closeModal')" :showModal="showVictoryModal">
     <p class="font-title text-5xl mb-2">Victory!</p>
     <section class="text-lg sm:text-xl text-center space-y-2">
-      <p>
+      <p class="text-pretty">
         <span>You succesfully matched all the movies in </span>
         <span class="font-bold">{{ guesses }}</span>
         <span> guesses.</span>
       </p>
-      <p v-if="record">
+      <p v-if="record" class="text-pretty">
         <span>Your fastest victory was </span>
         <span class="font-bold">{{ record }}</span>
         <span> guesses.</span>
